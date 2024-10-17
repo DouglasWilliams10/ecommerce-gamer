@@ -1,3 +1,7 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  // Regra para que não ocorra o erro quando usarmos o tipo any no projeto
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off"
+  }
 }

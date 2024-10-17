@@ -1,15 +1,17 @@
 import ProductItem from "@/components/products/ProductItem";
-import { products } from "@/core/constants/products";
+import products from "@/core/constants/products";
 
 
 
 export default function Home() {
   return (
     <div>
-      <ProductItem products={products[0]}/>
-      <ProductItem products={products[1]}/>
-      <ProductItem products={products[2]}/>
-      <ProductItem products={products[3]}/>
+      <body className="grid grid-cols-4 gap-5 container">
+          {products.map((product) => (
+            <ProductItem key={product.id} products={product} />
+          ))}
+      </body>
+
     </div>
   );
 }
