@@ -1,6 +1,6 @@
 import Products from "../product/Products";
 
-export const products: Products[] = [
+const products: Products[] = [
     {
         id: 1,
         name: 'Notebook Gamer Acer Nitro 5',
@@ -232,24 +232,27 @@ export const products: Products[] = [
         id: 10,
         name: 'Processador Intel Core i9-13900K',
         description: 'O Intel Core i9-13900K é o processador ideal para gamers e profissionais que precisam de desempenho extremo. Equipado com 24 núcleos e 32 threads, alcança frequências de até 5,8 GHz em modo turbo, oferecendo desempenho inigualável.',
-        mark: 'Acer',
-        model: 'AN515-5458CL',
-        image: 'ghgfd',
+        mark: 'Intel',
+        model: 'BX8071513900K',
+        image: 'https://firebasestorage.googleapis.com/v0/b/formacao-dev.appspot.com/o/lancamentos%2Fgam3rstore%2Fcore-i9-13900k.png?alt=media&token=9d185bf6-64ca-48bf-bdb7-acd0de317f09',
         note: 4.5,
-        videoReview: 'ferg',
-        tags: ['Baixou'],
-        basePrice: 8900.99,
-        promotionalPrice: 6899.99,
-        lowestPrice: 7899.99,
-        highestPrice: 12899.99,
-        averagePrice: 8599.99,
+        videoReview: 'https://www.youtube.com/embed/tV-FbmLJejg',
+        tags: ['Desempenho Máximo', 'Recomendado para Jogos', 'Overclock'],
+        basePrice: 3899.99,
+        promotionalPrice: 3299.99,
+        lowestPrice: 2999.99,
+        highestPrice: 4199.99,
+        averagePrice: 3599.99,
         specifications: {
-            emphasis: 'NVIDIA GeForce RTX 2060',
-            processor: 'Intel Core i9-12400H',
-            memory: '64GB DDR5',
-            storage: '2TB SSD',
-            screen: '15" Full HD',
-            weight: '2.5 kg',
+            emphasis: 'Intel Core i9-13900K',
+            'Nº de núcleos de CPU': 24,
+            'Nº de threads': 32,
+            'Clock de Max Boost': 5.8,
+            'Clock básico': 3.0,
+            'Total de Cache L2': '32 MB',
+            'Cachê L3 total': '36 MB',
+            socket: 'LGA 1700',
+            weight: '101 g',
         },
     },
     {
@@ -689,3 +692,5 @@ export const products: Products[] = [
         },
     }
 ]
+
+export default products
