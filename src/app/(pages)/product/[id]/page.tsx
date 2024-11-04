@@ -8,13 +8,13 @@ import { useEffect, useState } from "react"
 
 
 export default function PageProduct(props: any) {
-    const { getProductsId } = useProducts()
+    const { getProductId } = useProducts()
     const [ product, setProduct ]  = useState<Product | null>(null)
 
     //colocando o sinal de + na frente para converter a string em número
     useEffect(() => {
-        getProductsId(+props.params.id).then(setProduct)
-    }, [props.params.id,  getProductsId])
+        getProductId(+props.params.id).then(setProduct)
+    }, [props.params.id,  getProductId])
 
     return product ? <div>{product?.name}</div> : <div>Produto não encontrado</div>
 }
