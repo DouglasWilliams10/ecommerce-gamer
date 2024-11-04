@@ -1,4 +1,4 @@
-### This is a [Next.js](https://nextjs.org) project bootstrapped.
+# This is a [Next.js](https://nextjs.org) project bootstrapped.
 
 The project is based on e-commerce, simulating the sale of products related to computer technology.
 
