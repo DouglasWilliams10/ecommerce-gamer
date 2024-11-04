@@ -1,5 +1,5 @@
 import Specifications from "./Specifications";
 import Price from "./Price";
-import Products from "./Products";
+import Product from "./Product";
 
-export type { Specifications, Price, Products}
+export type { Specifications, Price, Product}

@@ -1,7 +1,7 @@
 import Price from "./Price"
 import Specifications from "./Specifications"
 
-export default interface Products extends Price {
+export default interface Product extends Price {
     id: number
     name: string
     description: string
