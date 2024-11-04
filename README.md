@@ -1,4 +1,4 @@
-### This is a [Next.js](https://nextjs.org) project bootstrapped.
+### This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 The project is based on e-commerce, simulating the sale of products related to computer technology.
 
@@ -7,7 +7,6 @@ Project still under construction, I will add other functions and technologies.
 ![image](https://github.com/user-attachments/assets/d17571f4-279b-4ccd-810a-89029cb32f2b)
 ![image](https://github.com/user-attachments/assets/d8cfa258-271d-4a4b-870e-d1d0cbff95be)
 
-With [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
