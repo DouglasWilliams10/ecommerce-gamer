@@ -11,12 +11,15 @@ export default function useProducts() {
     const [products, setProducts] = useState<Product[]>([]) 
 
     async function getProducts(): Promise<Product[]> {
-        const resp = await fetch(`${urlBase}/products`)
+        const resp = await fetch(`${urlBase}/product`)
         const products = resp.json()
         return products ?? []
     }
+    
+// Utilizado o useCallback para não gerar várias renderizações desnecessárias dentro da 
+// aplicação, gerando problemas de solicitações demasiadas ao backend
 
-    const getProductsId = useCallback(async function getProductsId(
+    const getProductId = useCallback(async function getProductId(
         id: number
     ): Promise<Product | null> {
         const resp = await fetch(`${urlBase}/product/${id}`)
@@ -33,7 +36,7 @@ export default function useProducts() {
 
     return {
         products,
-        getProductsId,
+        getProductId,
     }
 }
 

@@ -1,7 +1,8 @@
 'use client'
-import ProductItem from "@/app/(pages)/products/ProductItem";
-import useProducts from "@/data/hooks/useProducts";
 
+import useProducts from "@/data/hooks/useProducts";
+import ProductItem from "./products/ProductItem";
+import { Product } from "@/core";
 
 export default function Home() {
 
@@ -11,11 +12,14 @@ export default function Home() {
 
 
   return (
+    <div>
       <div className="grid grid-cols-4 gap-5 container">
-        {products.map((product) => (
+        {products.map((product: Product) => (
           <ProductItem key={product.id} product={product} />
         ))}
 
       </div>
+
+    </div>
   );
 }
