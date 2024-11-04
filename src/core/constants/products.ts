@@ -1,6 +1,6 @@
-import Products from "../product/Products";
+import Product from "../product/Product";
 
-const products: Products[] = [
+const products: Product[] = [
     {
         id: 1,
         name: 'Notebook Gamer Acer Nitro 5',
@@ -693,4 +693,4 @@ const products: Products[] = [
     }
 ]
 
-export default products
+export default products;
