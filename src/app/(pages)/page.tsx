@@ -1,7 +1,7 @@
 'use client'
 
 import useProducts from "@/data/hooks/useProducts";
-import ProductItem from "./products/ProductItem";
+import ProductItem from "../../components/products/ProductItem";
 import { Product } from "@/core";
 
 export default function Home() {

@@ -1,3 +1,3 @@
 // import { useContext } from "react"
 
-// export const useCart() => useContext()
+// export const useCart: any() => useContext()

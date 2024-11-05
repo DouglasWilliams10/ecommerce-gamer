@@ -27,7 +27,30 @@ body {
 }
 
 @layer components {
-  .container{
+  .container {
     @apply max-w-7xl mx-auto px-10;
+  }
+
+  .button {
+    @apply flex justify-center items-center;
+    @apply gap-2 rounded-full px-9 h-9;
+    @apply text-sm font-semibold;
+    @apply transition-transform transition-colors;
+    /* Adiciona transição suave */
+  }
+
+  .button:hover {
+
+    @apply bg-blue-500 text-white;
+    /* Altere as cores conforme desejar */
+
+
+    @apply scale-95;
+    /* Reduz ligeiramente a escala */
+  }
+
+  .input {
+    @apply bg-black/50 px-4 py-2 rounded;
+    @apply outline-none focus:border border-white/20;
   }
 }
